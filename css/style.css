@@ -43,6 +43,19 @@
 /* /сбрасываем стиль списка */
 .list {
   list-style: none;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0;
+  padding: 0 0;
 }
 
 /* /сбрасываем стиль ссылок в header */
@@ -107,23 +120,35 @@
 /* //стили к мейн */
 /* /описание секции герой */
 .hero {
+  padding: 200px 0;
   background-color: var(--background-hero-footer);
+  text-align: center;
+  /* height: 600px; */
 }
 
 .hero .title {
+  margin: 0 auto;
+  width: 696px;
+
+  color: var(--text-accent-secondary);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text-accent-secondary);
 }
 /* /стили к кнопке в герое */
 .hero-button {
+  margin-top: 30px;
+  padding: 10px 32px;
+  border-radius: 4px;
   border: none;
+
   color: var(--text-accent-secondary);
   background-color: var(--background-hero-button);
+
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -144,6 +169,19 @@
   text-transform: uppercase;
   color: var(--text-main-primary);
 }
+
+.features .list {
+  display: flex;
+}
+
+.features .item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.features .features-title {
+  margin-bottom: 10px;
+}
+
 /* /стили к секции чем мы занимаемся */
 .our-description .description-title {
   font-size: 36px;
@@ -151,6 +189,20 @@
   text-align: center;
   color: var(--text-main-primary);
 }
+
+.our-description .container {
+  margin-top: 50px;
+}
+
+.our-description .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-description {
+  padding-bottom: 94px;
+}
+
 /* /стили для секции наша команда */
 .team {
   background-color: var(--background-team);
@@ -166,17 +218,35 @@
 }
 
 .team-member .name {
+  margin-top: 30px;
+
+  color: var(--text-main-primary);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: var(--text-main-primary);
 }
 
 .team-member .specialization {
+  margin-top: 10px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.team .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team .container {
+  margin-top: 50px;
+}
+
+.team-member {
+  padding-bottom: 30px;
 }
 /* //Стили к футеру */
 /* /применение второго цвета к части логотипа в футере */
@@ -235,4 +305,46 @@
 /* временный стиль текузей страницы */
 .body .current {
   color: var(--text-accent-primary);
+}
+/* /временные стили для границ элементов */
+.per {
+  outline: 2px solid blue;
+}
+
+.it {
+  outline: 2px solid tomato;
+}
+
+.ch {
+  outline: 2px solid green;
+}
+/* //разметка*/
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header .container,
+.header .navigation,
+.header .header-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.header .pages-list {
+  width: 294px;
+  display: flex;
+  margin-left: 93px;
+  justify-content: space-between;
+}
+.header-contacts {
+  margin-left: auto;
+}
+.header-contacts .item:last-child {
+  margin-left: 50px;
 }

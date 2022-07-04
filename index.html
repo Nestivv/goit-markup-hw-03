@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
+
     <!-- ? подключаем шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,76 +13,94 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- ?подключаем нормализацию стилей -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- ? подключаем css -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body class="body">
     <!-- // header -->
-    <header class="header">
-      <nav>
-        <a href="./index.html" class="logo-link">Web<span class="logo-color">Studio</span></a>
+    <header class="header per">
+      <div class="container per">
+        <nav class="navigation it">
+          <a href="./index.html" class="logo-link">Web<span class="logo-color">Studio</span></a>
 
-        <ul class="pages-list list">
-          <li><a href="./index.html" class="page-link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="page-link">Портфолио</a></li>
-          <li><a href="" class="page-link">Контакты</a></li>
+          <ul class="pages-list list">
+            <li class="item ch"><a href="./index.html" class="page-link current">Студия</a></li>
+            <li class="item ch"><a href="./portfolio.html" class="page-link">Портфолио</a></li>
+            <li class="item ch"><a href="" class="page-link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="header-contacts list it">
+          <li class="item ch">
+            <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
+          </li>
+
+          <li class="item ch">
+            <a href="tel:+380961111111" class="phone">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-
-      <ul class="header-contacts list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
-        </li>
-
-        <li>
-          <a href="tel:+380961111111" class="phone">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!-- // main -->
     <main>
       <!-- / Секция "Герой"  -->
-      <section class="hero">
-        <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero-button">Заказать услугу</button>
+      <section class="hero per">
+        <div class="container per">
+          <h1 class="title it">Эффективные решения для вашего бизнеса</h1>
+          <button type="button it" class="hero-button">Заказать услугу</button>
+        </div>
       </section>
       <!-- / Секция "Преимущества работы с нами."-->
-      <section class="features">
+      <section class="features section per">
         <h2 class="hidden">Преимущества работы с нами.</h2>
-        <ul class="list">
-          <li>
-            <h3 class="features-title">Внимание к деталям</h3>
-            <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-          </li>
+        <div class="container per">
+          <ul class="list it">
+            <li class="item ch">
+              <h3 class="features-title">Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
 
-          <li>
-            <h3 class="features-title">Пунктуальность</h3>
-            <p>
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-          </li>
+            <li class="item ch">
+              <h3 class="features-title">Пунктуальность</h3>
+              <p>
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li class="item ch">
 
-          <li>
-            <h3 class="features-title">Планирование</h3>
-            <p>
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-          </li>
+            <li class="item ch">
+              <h3 class="features-title">Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li class="item ch">
 
-          <li>
-            <h3 class="features-title">Современные технологии</h3>
-            <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-          </li>
-        </ul>
+            <li class="item ch">
+              <h3 class="features-title">Современные технологии</h3>
+              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- / Секция "Чем мы занимаемся" -->
-      <section class="our-description">
+      <section class="our-description per">
         <h2 class="description-title">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li>
+        <div class="container per">
+          <ul class="list it">
+          <li class="item ch">
             <img
               src="./images/img-index/logic.jpg"
               alt="разрабатываем логику проекта"
@@ -89,7 +108,7 @@
             />
           </li>
 
-          <li>
+          <li class="item ch">
             <img
               src="./images/img-index/gadget.jpg"
               alt="разрабатываем адаптивный дизайн"
@@ -97,7 +116,7 @@
             />
           </li>
 
-          <li>
+          <li class="item ch">
             <img
               src="./images/img-index/color.jpg"
               alt="подбираем сочитание цветов к вашей тематики"
@@ -105,13 +124,14 @@
             />
           </li>
         </ul>
+        </div>
       </section>
 
       <!-- / Секция "Наша команда"-->
-      <section class="team">
-        <h2 class="team-title">Наша команда</h2>
-        <ul class="list">
-          <li class="team-member">
+      <section class="team per section">
+        <h2 class="team-title it">Наша команда</h2>
+        <ul class="list container it">
+          <li class="team-member ch">
             <img
               src="./images/img-index/igor.jpg"
               alt="Ведущий специалист - Дизайнер"
@@ -121,7 +141,7 @@
             <p lang="en" class="specialization">Product Designer</p>
           </li>
 
-          <li class="team-member">
+          <li class="team-member ch">
             <img
               src="./images/img-index/olha.jpg"
               alt="Ведущий специалист - Разработчик"
@@ -131,13 +151,13 @@
             <p lang="en" class="specialization">Frontend Developer</p>
           </li>
 
-          <li class="team-member">
+          <li class="team-member ch">
             <img src="./images/img-index/nikolai.jpg" alt="Специалист по маркетингу" width="270" />
             <h3 class="name">Николай Тарасов</h3>
             <p lang="en" class="specialization">Marketing</p>
           </li>
 
-          <li class="team-member">
+          <li class="team-member ch">
             <img
               src="./images/img-index/mikhail.jpg"
               alt="Ведущий специалист - Дизайнер"
