@@ -1,0 +1,238 @@
+/* /все основные цвета в проекте */
+:root {
+  --text-footer-primary: #ffffff;
+  --text-footer-secondary: rgba(255, 255, 255, 0.6);
+
+  --text-main-primary: #212121;
+  --text-main-secondary: #757575;
+
+  --text-accent-primary: #2196f3;
+  --text-accent-secondary: #fff;
+
+  --text-footer-logo: #ffffff;
+  --text-header-logo: #000000;
+
+  --background-main: #fff;
+  --background-hero-footer: #2f303a;
+  --background-team: #f5f4fa;
+  --background-hero-button: #2196f3;
+  --background-hover-hero-button: #188ce8;
+  --main-hover-color: #2196f3;
+  --background-member-card: #fff;
+
+  /* / цвета для страницы портфолио */
+  --portfolio-button-background: #f5f4fa;
+  --portfolio-card-border: #eeeeee;
+  --portfolio-card-background: #fff;
+}
+.body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-main-secondary);
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-main);
+}
+
+/* /скрывает заголовки секций */
+.hidden {
+  visibility: hidden;
+}
+
+/* /сбрасываем стиль списка */
+.list {
+  list-style: none;
+}
+
+/* /сбрасываем стиль ссылок в header */
+.header a,
+.footer a {
+  text-decoration: none;
+}
+
+/* /применяем общие шрифты к всему хедеру */
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* /шрифты для лого применяется сразу к футеру и хедеру */
+.header .logo-link,
+.footer .logo-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--text-accent-primary);
+}
+
+/* /применение второго цвета к части логотипа в хедере */
+.header .logo-color {
+  color: var(--text-header-logo);
+}
+
+/* /задаем цвет ссылок на список страниц */
+.page-link {
+  color: var(--text-main-primary);
+}
+
+/* /цвет ссылок на телефо и почту в хедере */
+.header-contacts .mail,
+.header-contacts .phone {
+  color: var(--text-main-secondary);
+}
+
+/* /прописываем наведение для ссылок */
+.page-link:hover,
+.header-contacts .mail:hover,
+.header-contacts .phone:hover,
+.footer-contacts .mail:hover,
+.footer-contacts .phone:hover {
+  color: var(--main-hover-color);
+}
+
+.page-link:focus,
+.header-contacts .mail:focus,
+.header-contacts .phone:focus,
+.footer-contacts .mail:focus,
+.footer-contacts .phone:focus {
+  color: var(--main-hover-color);
+}
+
+/* //стили к мейн */
+/* /описание секции герой */
+.hero {
+  background-color: var(--background-hero-footer);
+}
+
+.hero .title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-accent-secondary);
+}
+/* /стили к кнопке в герое */
+.hero-button {
+  border: none;
+  color: var(--text-accent-secondary);
+  background-color: var(--background-hero-button);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+}
+
+.hero-button:focus,
+.hero-button:hover {
+  color: var(--text-accent-secondary);
+  background-color: var(--background-hover-hero-button);
+}
+/* /стили секции наши преимущества */
+.features .features-title {
+  font-size: inherit;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--text-main-primary);
+}
+/* /стили к секции чем мы занимаемся */
+.our-description .description-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--text-main-primary);
+}
+/* /стили для секции наша команда */
+.team {
+  background-color: var(--background-team);
+}
+.team .team-member {
+  background-color: var(--background-member-card);
+}
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--text-main-primary);
+}
+
+.team-member .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--text-main-primary);
+}
+
+.team-member .specialization {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+/* //Стили к футеру */
+/* /применение второго цвета к части логотипа в футере */
+.footer .logo-color {
+  color: var(--text-footer-logo);
+}
+.footer {
+  background-color: var(--background-hero-footer);
+}
+
+.footer-adress {
+  color: var(--text-footer-primary);
+  font-style: normal;
+}
+
+.footer-contacts .mail,
+.footer-contacts .phone {
+  color: var(--text-footer-secondary);
+}
+
+/* // стили к странице портфолио */
+/* / стили к фильтру с кнопками */
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--portfolio-button-background);
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--main-hover-color);
+  color: var(--text-accent-secondary);
+}
+
+/* /секция наши проекты */
+.portfolio-card {
+  background-color: var(--portfolio-card-background);
+  border: 1px solid var(--portfolio-card-border);
+}
+.portfolio-list {
+  font-size: 16px;
+  line-height: 1.88;
+}
+.portfolio-card .title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-main-primary);
+}
+
+/* временный стиль текузей страницы */
+.body .current {
+  color: var(--text-accent-primary);
+}
