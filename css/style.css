@@ -356,7 +356,6 @@ img {
   margin-left: 30px;
   margin-top: 30px;
 
-  border: 1px solid #eeeeee;
   background-color: var(--portfolio-card-background);
   border: 1px solid var(--portfolio-card-border);
 }
@@ -381,13 +380,14 @@ img {
 .portfolio-list .card-description {
   padding-top: 20px;
   padding-bottom: 20px;
+  border: 1px solid #eeeeee;
 }
 
 /* временный стиль текузей страницы */
 .body .current {
   color: var(--text-accent-primary);
 }
-/* /временные стили для границ элементов */
+/* /временные стили для границ элементов
 .per {
   outline: 2px solid blue;
 }
@@ -398,7 +398,7 @@ img {
 
 .ch {
   outline: 2px solid green;
-}
+} */
 /* //разметка*/
 .section {
   padding: 94px 0;
