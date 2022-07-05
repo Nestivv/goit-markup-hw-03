@@ -20,7 +20,7 @@
   --main-hover-color: #2196f3;
   --background-member-card: #fff;
 
-  --border-color: #ECECEC;
+  --border-color: #ececec;
 
   /* / цвета для страницы портфолио */
   --portfolio-button-background: #f5f4fa;
@@ -39,14 +39,23 @@
 
 /* /скрывает заголовки секций */
 .hidden {
-  visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* /сбрасываем стиль списка */
 .list {
   list-style: none;
-  margin: 0 0;
-  padding: 0 0;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -56,8 +65,12 @@ h4,
 h5,
 h6,
 p {
-  margin: 0 0;
-  padding: 0 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 /* /сбрасываем стиль ссылок в header */
@@ -100,6 +113,29 @@ p {
 .header-contacts .mail,
 .header-contacts .phone {
   color: var(--text-main-secondary);
+}
+
+.header .container,
+.header .navigation,
+.header .header-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.header .pages-list {
+  width: 294px;
+  display: flex;
+  margin-left: 93px;
+  justify-content: space-between;
+}
+.header-contacts {
+  margin-left: auto;
+}
+.header-contacts .item:last-child {
+  margin-left: 50px;
+}
+.header .container {
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* /прописываем наведение для ссылок */
@@ -220,14 +256,11 @@ p {
 }
 
 .team-member .name {
-  margin-top: 30px;
-
   color: var(--text-main-primary);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 .team-member .specialization {
@@ -235,7 +268,6 @@ p {
 
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 .team .list {
@@ -247,8 +279,10 @@ p {
   margin-top: 50px;
 }
 
-.team-member {
+.team-member .person {
+  padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
 }
 /* //Стили к футеру */
 /* /применение второго цвета к части логотипа в футере */
@@ -269,15 +303,15 @@ p {
   color: var(--text-footer-secondary);
 }
 
-.footer .container{
+.footer .container {
   padding: 60px 0;
 }
 
-.footer-adress .place{
+.footer-adress .place {
   margin-top: 20px;
 }
 
-.footer-adress .item{
+.footer-adress .item {
   margin-top: 9px;
 }
 
@@ -301,29 +335,52 @@ p {
   color: var(--text-accent-secondary);
 }
 
-.filter-list{
-  display: flex;
-}
-/* /разметка портфолио */
+.portfolio .filter-list {
+  margin-bottom: 34px;
 
-.portfolio-card{
-  border: 1px solid #eeeeee;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio .btn-item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.portfolio-card .card-description {
+  padding: 20px 24px;
 }
 
 /* /секция наши проекты */
 .portfolio-card {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+
+  border: 1px solid #eeeeee;
   background-color: var(--portfolio-card-background);
   border: 1px solid var(--portfolio-card-border);
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+
   font-size: 16px;
   line-height: 1.88;
 }
 .portfolio-card .title {
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-main-primary);
+}
+
+.portfolio-list .card-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* временный стиль текузей страницы */
@@ -348,30 +405,7 @@ p {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-.header .container,
-.header .navigation,
-.header .header-contacts {
-  display: flex;
-  align-items: center;
-}
-
-.header .pages-list {
-  width: 294px;
-  display: flex;
-  margin-left: 93px;
-  justify-content: space-between;
-}
-.header-contacts {
-  margin-left: auto;
-}
-.header-contacts .item:last-child {
-  margin-left: 50px;
-}
-.header .border{
-  border: 1px solid var(--border-color);
 }
