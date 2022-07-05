@@ -20,6 +20,8 @@
   --main-hover-color: #2196f3;
   --background-member-card: #fff;
 
+  --border-color: #ECECEC;
+
   /* / цвета для страницы портфолио */
   --portfolio-button-background: #f5f4fa;
   --portfolio-card-border: #eeeeee;
@@ -267,6 +269,18 @@ p {
   color: var(--text-footer-secondary);
 }
 
+.footer .container{
+  padding: 60px 0;
+}
+
+.footer-adress .place{
+  margin-top: 20px;
+}
+
+.footer-adress .item{
+  margin-top: 9px;
+}
+
 /* // стили к странице портфолио */
 /* / стили к фильтру с кнопками */
 .filter-button {
@@ -278,12 +292,22 @@ p {
   cursor: pointer;
   border: none;
   font-family: inherit;
+  border-radius: 4px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   background-color: var(--main-hover-color);
   color: var(--text-accent-secondary);
+}
+
+.filter-list{
+  display: flex;
+}
+/* /разметка портфолио */
+
+.portfolio-card{
+  border: 1px solid #eeeeee;
 }
 
 /* /секция наши проекты */
@@ -347,4 +371,7 @@ p {
 }
 .header-contacts .item:last-child {
   margin-left: 50px;
+}
+.header .border{
+  border: 1px solid var(--border-color);
 }
