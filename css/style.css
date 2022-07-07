@@ -73,10 +73,12 @@ img {
   max-width: 100%;
 }
 
-/* /сбрасываем стиль ссылок в header */
+/* /сбрасываем стиль ссылок */
 .header a,
-.footer a {
+.footer a,
+.portfolio a {
   text-decoration: none;
+  color:inherit;
 }
 
 /* /применяем общие шрифты к всему хедеру */
@@ -127,10 +129,12 @@ padding-bottom: 24px;
 }
 
 .header .pages-list {
-  width: 294px;
   display: flex;
   margin-left: 93px;
-  justify-content: space-between;
+}
+
+.pages-list .item:not(:last-child){
+  margin-right: 50px;
 }
 .header-contacts {
   margin-left: auto;
@@ -227,19 +231,20 @@ padding-bottom: 24px;
 
 /* /стили к секции чем мы занимаемся */
 .our-description .description-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--text-main-primary);
 }
 
-.our-description .container {
-  margin-top: 50px;
+.our-description .description-list {
+  display: flex;
 }
 
-.our-description .list {
-  display: flex;
-  justify-content: space-between;
+.description-list .item:not(:last-child){
+  margin-right: 30px;
 }
 
 .our-description {
@@ -254,6 +259,8 @@ padding-bottom: 24px;
   background-color: var(--background-member-card);
 }
 .team-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -275,13 +282,12 @@ padding-bottom: 24px;
   line-height: 1.19;
 }
 
-.team .list {
+.team .team-list {
   display: flex;
-  justify-content: space-between;
 }
 
-.team .container {
-  margin-top: 50px;
+.team-list .team-member:not(:last-child){
+  margin-right: 30px;
 }
 
 .team-member .person {
@@ -342,7 +348,7 @@ padding-bottom: 24px;
 }
 
 .portfolio .filter-list {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 
   display: flex;
   justify-content: center;
