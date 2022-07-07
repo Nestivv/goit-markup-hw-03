@@ -88,6 +88,7 @@ padding-bottom: 24px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* /шрифты для лого применяется сразу к футеру и хедеру */
@@ -136,9 +137,6 @@ padding-bottom: 24px;
 }
 .header-contacts .item:last-child {
   margin-left: 50px;
-}
-.header .container {
-  border-bottom: 1px solid var(--border-color);
 }
 
 /* /прописываем наведение для ссылок */
