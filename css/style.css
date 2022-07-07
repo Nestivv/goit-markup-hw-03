@@ -81,6 +81,9 @@ img {
 
 /* /применяем общие шрифты к всему хедеру */
 .header {
+padding-top: 24px;
+padding-bottom: 24px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -220,6 +223,10 @@ img {
   margin-bottom: 10px;
 }
 
+.features .item{
+  width: 270px;
+}
+
 /* /стили к секции чем мы занимаемся */
 .our-description .description-title {
   font-size: 36px;
@@ -291,6 +298,7 @@ img {
 }
 .footer {
   background-color: var(--background-hero-footer);
+  padding: 60px 0;
 }
 
 .footer-adress {
@@ -303,15 +311,15 @@ img {
   color: var(--text-footer-secondary);
 }
 
-.footer .container {
-  padding: 60px 0;
-}
-
-.footer-adress .place {
+.footer-adress {
   margin-top: 20px;
 }
 
-.footer-adress .item {
+.footer-contacts {
+  margin-top: 9px;
+}
+
+.footer-adress .item:last-child{
   margin-top: 9px;
 }
 
@@ -357,7 +365,6 @@ img {
   margin-top: 30px;
 
   background-color: var(--portfolio-card-background);
-  border: 1px solid var(--portfolio-card-border);
 }
 .portfolio-list {
   display: flex;
@@ -381,14 +388,16 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 /* временный стиль текузей страницы */
 .body .current {
   color: var(--text-accent-primary);
 }
-/* /временные стили для границ элементов
-.per {
+/* /временные стили для границ элементов*/
+
+/* .per {
   outline: 2px solid blue;
 }
 
@@ -398,7 +407,8 @@ img {
 
 .ch {
   outline: 2px solid green;
-} */
+}  */
+
 /* //разметка*/
 .section {
   padding: 94px 0;
